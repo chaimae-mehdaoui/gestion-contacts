@@ -1,0 +1,112 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Conteneur principal de la page */
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 20px;
+}
+
+/* Titre */
+h2 {
+  text-align: center;
+  color: #4CAF50;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Labels */
+label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: bold;
+}
+
+/* Champs de saisie (input et textarea) */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #4CAF50;
+}
+
+/* Boutons */
+button {
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 48%;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button.save {
+  background-color: #4CAF50;
+}
+
+button.save:hover {
+  background-color: #45a049;
+}
+
+button.cancel {
+  background-color: #f44336;
+}
+
+button.cancel:hover {
+  background-color: #e53935;
+}
+
+/* Section de boutons (alignement) */
+button + button {
+  margin-left: 4%;
+}
+
+/* Responsive: Adaptation pour petits écrans */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  button + button {
+    margin-left: 0;
+  }
+}

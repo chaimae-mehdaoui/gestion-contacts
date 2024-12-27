@@ -1,0 +1,23 @@
+.new-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.new-contact-form input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.new-contact-form button {
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.new-contact-form button:hover {
+  background-color: darkblue;
+}
